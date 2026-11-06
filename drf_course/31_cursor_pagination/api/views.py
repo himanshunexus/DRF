@@ -1,0 +1,37 @@
+from .pagination import StudentCursorPagination
+
+from rest_framework import generics
+from .models import Student
+from .serializers import StudentSerializer
+
+
+class StudentList(generics.ListCreateAPIView):
+    queryset = Student.objects.all()
+    serializer_class = StudentSerializer
+    pagination_class = StudentCursorPagination
+
+
+class StudentDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Student.objects.all()
+    serializer_class = StudentSerializer
+
+
+from .mypaginations import MyCursorPagination
+
+class PaginationPractice(StudentList):
+    pagination_class = MyCursorPagination
+    http_method_names = ["get", "head", "options"]
+
+
+# NOTES ABOUT THE COMPLETE CODE ABOVE
+# ListCreateAPIView already implements GET list and POST create.
+# RetrieveUpdateDestroyAPIView implements GET one, PUT, PATCH and DELETE.
+# queryset says where records come from; serializer_class says how they are validated/output.
+# The detail URL supplies pk, which is the default lookup field.
+# DRF handles 400 validation errors, 404 missing records, and the normal success statuses.
+# Use get_queryset() if results depend on the request user; a class queryset alone is shared policy.
+# Modern version note: concrete generic views are still supported and reduce repeated handlers.
+#
+# The list view applies its pagination_class automatically. An ordinary APIView would need explicit pagination.
+#
+# PaginationPractice selects the lecture-named pagination variant and allows only reading.

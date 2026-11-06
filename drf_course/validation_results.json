@@ -1,0 +1,1297 @@
+[
+  {
+    "project": "01_what_is_api",
+    "passed": true,
+    "tests": 1,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 1 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n.\n----------------------------------------------------------------------\nRan 1 test in 0.377s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "02_what_is_web_api",
+    "passed": true,
+    "tests": 1,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 1 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n.\n----------------------------------------------------------------------\nRan 1 test in 0.375s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "03_rest_and_rest_api",
+    "passed": true,
+    "tests": 1,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 1 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n.\n----------------------------------------------------------------------\nRan 1 test in 0.374s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "04_install_drf",
+    "passed": true,
+    "tests": 1,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 1 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n.\n----------------------------------------------------------------------\nRan 1 test in 0.372s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "05_study_material",
+    "passed": true,
+    "tests": 1,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 1 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n.\n----------------------------------------------------------------------\nRan 1 test in 0.424s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "06_serialization",
+    "passed": true,
+    "tests": 1,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 1 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n.\n----------------------------------------------------------------------\nRan 1 test in 0.374s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "07_serializer_fields",
+    "passed": true,
+    "tests": 5,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 5 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n.....\n----------------------------------------------------------------------\nRan 5 tests in 0.381s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "08_deserialization",
+    "passed": true,
+    "tests": 4,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 4 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n....\n----------------------------------------------------------------------\nRan 4 tests in 0.388s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "09_django_crud_fbv_cbv",
+    "passed": true,
+    "tests": 4,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 4 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n....\n----------------------------------------------------------------------\nRan 4 tests in 0.385s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "10_validation",
+    "passed": true,
+    "tests": 4,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 4 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n....\n----------------------------------------------------------------------\nRan 4 tests in 0.383s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "11_model_serializer",
+    "passed": true,
+    "tests": 3,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 3 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n...\n----------------------------------------------------------------------\nRan 3 tests in 0.382s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "12_function_based_api_view",
+    "passed": true,
+    "tests": 2,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 2 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n..\n----------------------------------------------------------------------\nRan 2 tests in 0.380s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "13_class_based_api_view",
+    "passed": true,
+    "tests": 2,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 2 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n..\n----------------------------------------------------------------------\nRan 2 tests in 0.404s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "14_generics_and_mixins",
+    "passed": true,
+    "tests": 3,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 3 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n...\n----------------------------------------------------------------------\nRan 3 tests in 0.386s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "15_concrete_views",
+    "passed": true,
+    "tests": 3,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 3 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n...\n----------------------------------------------------------------------\nRan 3 tests in 0.387s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "16_viewset",
+    "passed": true,
+    "tests": 2,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 2 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n..\n----------------------------------------------------------------------\nRan 2 tests in 0.384s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "17_model_viewset",
+    "passed": true,
+    "tests": 3,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 3 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n...\n----------------------------------------------------------------------\nRan 3 tests in 0.382s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "18_basic_authentication",
+    "passed": true,
+    "tests": 5,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 5 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n.....\n----------------------------------------------------------------------\nRan 5 tests in 1.838s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "19_session_authentication",
+    "passed": true,
+    "tests": 4,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 4 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n....\n----------------------------------------------------------------------\nRan 4 tests in 0.956s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "20_custom_permissions",
+    "passed": true,
+    "tests": 3,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 3 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n...\n----------------------------------------------------------------------\nRan 3 tests in 0.381s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "21_function_view_authentication",
+    "passed": true,
+    "tests": 3,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 3 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n...\n----------------------------------------------------------------------\nRan 3 tests in 1.177s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "22_token_authentication",
+    "passed": true,
+    "tests": 4,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 4 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n....\n----------------------------------------------------------------------\nRan 4 tests in 0.930s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "23_custom_authentication",
+    "passed": true,
+    "tests": 5,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 5 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n.....\n----------------------------------------------------------------------\nRan 5 tests in 0.930s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "24_simple_jwt",
+    "passed": true,
+    "tests": 5,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 5 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n.....\n----------------------------------------------------------------------\nRan 5 tests in 1.119s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "25_throttling",
+    "passed": true,
+    "tests": 2,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 2 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n..\n----------------------------------------------------------------------\nRan 2 tests in 0.380s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "26_filtering",
+    "passed": true,
+    "tests": 3,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 3 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n...\n----------------------------------------------------------------------\nRan 3 tests in 0.385s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "27_search_filter",
+    "passed": true,
+    "tests": 3,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 3 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n...\n----------------------------------------------------------------------\nRan 3 tests in 0.382s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "28_ordering_filter",
+    "passed": true,
+    "tests": 3,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 3 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n...\n----------------------------------------------------------------------\nRan 3 tests in 0.382s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "29_page_number_pagination",
+    "passed": true,
+    "tests": 4,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 4 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n....\n----------------------------------------------------------------------\nRan 4 tests in 0.389s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "30_limit_offset_pagination",
+    "passed": true,
+    "tests": 4,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 4 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n....\n----------------------------------------------------------------------\nRan 4 tests in 0.388s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "31_cursor_pagination",
+    "passed": true,
+    "tests": 4,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 4 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n....\n----------------------------------------------------------------------\nRan 4 tests in 0.397s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "32_serializer_relations",
+    "passed": true,
+    "tests": 4,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "Migrations for 'api':\n  api/migrations/0002_singer_song.py\n    + Create model Singer\n    + Create model Song\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  Applying api.0002_singer_song... OK\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 4 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n....\n----------------------------------------------------------------------\nRan 4 tests in 0.399s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "33_hyperlinked_serializer",
+    "passed": true,
+    "tests": 3,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  No migrations to apply.\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 3 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n...\n----------------------------------------------------------------------\nRan 3 tests in 0.401s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "34_nested_serializer",
+    "passed": true,
+    "tests": 4,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "Migrations for 'api':\n  api/migrations/0002_singer_song.py\n    + Create model Singer\n    + Create model Song\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, sessions\nRunning migrations:\n  Applying api.0002_singer_song... OK\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 4 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n....\n----------------------------------------------------------------------\nRan 4 tests in 0.389s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  },
+  {
+    "project": "35_final_api_project",
+    "passed": true,
+    "tests": 8,
+    "checks": [
+      {
+        "command": "python manage.py makemigrations --noinput",
+        "exit_code": 0,
+        "output": "Migrations for 'enroll':\n  enroll/migrations/0001_initial.py\n    + Create model User\n"
+      },
+      {
+        "command": "python manage.py check",
+        "exit_code": 0,
+        "output": "System check identified no issues (0 silenced).\n"
+      },
+      {
+        "command": "python manage.py migrate --noinput",
+        "exit_code": 0,
+        "output": "Operations to perform:\n  Apply all migrations: admin, api, auth, authtoken, contenttypes, enroll, sessions\nRunning migrations:\n  Applying enroll.0001_initial... OK\n"
+      },
+      {
+        "command": "python manage.py seed",
+        "exit_code": 0,
+        "output": "Demo data ready. See README.md for local credentials.\n"
+      },
+      {
+        "command": "python manage.py test --noinput --verbosity 1",
+        "exit_code": 0,
+        "output": "Found 8 test(s).\nSystem check identified no issues (0 silenced).\nDemo data ready. See README.md for local credentials.\nCreating test database for alias 'default'...\n........\n----------------------------------------------------------------------\nRan 8 tests in 2.330s\n\nOK\nDestroying test database for alias 'default'...\n"
+      },
+      {
+        "command": "python manage.py makemigrations --check --dry-run",
+        "exit_code": 0,
+        "output": "No changes detected\n"
+      }
+    ]
+  }
+]

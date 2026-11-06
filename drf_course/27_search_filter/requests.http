@@ -1,0 +1,18 @@
+# Start this lesson's development server first.
+# In a REST-client extension, run each request separately.
+GET http://127.0.0.1:8000/api/students/?search=Delhi
+Accept: application/json
+
+### Create (only in writable lessons; add required authentication)
+POST http://127.0.0.1:8000/api/students/
+Content-Type: application/json
+
+{"name":"Sana","roll":901,"city":"Delhi"}
+
+### Partial update (only when a detail endpoint exists)
+PATCH http://127.0.0.1:8000/api/students/1/
+Content-Type: application/json
+
+{"city":"Agra"}
+
+### Authentication instructions are in README.md and LECTURE_NOTES.md.

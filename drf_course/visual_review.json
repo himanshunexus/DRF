@@ -1,0 +1,750 @@
+[
+  {
+    "lesson": 1,
+    "project": "01_what_is_api",
+    "title": "What is API (Hindi)",
+    "reviewed_timestamps": [
+      141,
+      318,
+      495,
+      637
+    ],
+    "observations": "The sampled slides use a restaurant intermediary analogy, then show website/mobile clients connecting to an application and database. API release policies appear on the introductory slide.",
+    "keywords": [
+      "Application Programming Interface",
+      "Private",
+      "Partner",
+      "Public",
+      "Application",
+      "Database"
+    ],
+    "alignment": "Keep the runnable introduction, but explain that it is an added exercise: the sampled lecture sections are conceptual slides, not a Django implementation."
+  },
+  {
+    "lesson": 2,
+    "project": "02_what_is_web_api",
+    "title": "What is Web API (Hindi)",
+    "reviewed_timestamps": [
+      48,
+      109,
+      170,
+      219
+    ],
+    "observations": "The slides trace the client request through a Web API to a web application/database and the response back to the client. Later slides introduce API registration and an API key/token.",
+    "keywords": [
+      "HTTP Request",
+      "Web API",
+      "Web Application",
+      "API Key",
+      "Token",
+      "Authentication"
+    ],
+    "alignment": "Add an explicit request/response walkthrough. Explain that the slide's query-string key is an illustration; this collection uses Authorization headers in the authentication lessons."
+  },
+  {
+    "lesson": 3,
+    "project": "03_rest_and_rest_api",
+    "title": "What is REST and REST API (Hindi)",
+    "reviewed_timestamps": [
+      188,
+      423,
+      659,
+      847
+    ],
+    "observations": "The sampled slides use students as the resource, distinguish a collection URL from a student-specific URL, and map GET, POST, PUT, PATCH and DELETE to those endpoints.",
+    "keywords": [
+      "REST Web API",
+      "Students API Resource",
+      "Request",
+      "Response",
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ],
+    "alignment": "Keep student-resource names and add the collection/detail method table to the lesson notes. Explain that the introductory project demonstrates GET and later projects implement all methods."
+  },
+  {
+    "lesson": 4,
+    "project": "04_install_drf",
+    "title": "Django Rest Framework and How to Install Uninstall Django Rest Framework (Hindi)",
+    "reviewed_timestamps": [
+      93,
+      210,
+      326,
+      420
+    ],
+    "observations": "The installation demonstration visibly uses Django 3.1.1 and djangorestframework 3.11.1, with a pip uninstall demonstration. Introductory slides discuss browsable APIs and serialization.",
+    "keywords": [
+      "djangorestframework",
+      "pip",
+      "uninstall",
+      "browsable API",
+      "ORM"
+    ],
+    "alignment": "Document the observed historical versions alongside the collection's tested Django 5.2 and DRF 3.16. Keep installation isolated in a virtual environment."
+  },
+  {
+    "lesson": 5,
+    "project": "05_study_material",
+    "title": "Download Django REST Framework Study Material (Hindi)",
+    "reviewed_timestamps": [
+      36,
+      81,
+      163
+    ],
+    "observations": "The reviewed frames show the instructor's study-material page and a purchase/download flow for a PPT-and-code bundle. This is not a Django coding demonstration.",
+    "keywords": [
+      "Study Material",
+      "PPT",
+      "Code"
+    ],
+    "alignment": "Label this folder as a companion reference exercise. Do not imply its generated code is the instructor's downloadable bundle.",
+    "exclude_seconds": [
+      127
+    ]
+  },
+  {
+    "lesson": 6,
+    "project": "06_serialization",
+    "title": "Serializer and Serializertion in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      656,
+      1477,
+      2954
+    ],
+    "observations": "A slide explicitly defines StudentSerializer using Serializer with name, roll and city fields. A later code frame shows a separate myapp.py client using requests.get against a stuinfo detail URL and printing student dictionaries.",
+    "keywords": [
+      "StudentSerializer",
+      "Serializer",
+      "CharField",
+      "IntegerField",
+      "name",
+      "roll",
+      "city",
+      "myapp.py",
+      "requests.get",
+      "stuinfo"
+    ],
+    "alignment": "Simplify this serialization-only serializer and add a standalone HTTP client plus stuinfo aliases. Keep the existing collection URLs for compatibility.",
+    "exclude_seconds": [
+      2298
+    ]
+  },
+  {
+    "lesson": 7,
+    "project": "07_serializer_fields",
+    "title": "Serializer Fields and Core Arguments in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      81,
+      182,
+      283,
+      364
+    ],
+    "observations": "The reviewed slides include CharField, UUIDField, and the core arguments initial, style, allow_null and source. The original companion covered only a subset of these fields.",
+    "keywords": [
+      "CharField",
+      "UUIDField",
+      "initial",
+      "style",
+      "allow_null",
+      "source",
+      "to_internal_value"
+    ],
+    "alignment": "Add a runnable field playground covering these arguments without adding irrelevant database columns. Explain form initial values separately from input defaults."
+  },
+  {
+    "lesson": 8,
+    "project": "08_deserialization",
+    "title": "DeSerialization and Insert Data Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      374,
+      843,
+      1311,
+      1686
+    ],
+    "observations": "The code sections show a create method and a student_create function reading request.body through io.BytesIO and JSONParser, validating a serializer, saving it, and rendering a response with JSONRenderer. A separate client prepares a student dictionary.",
+    "keywords": [
+      "create",
+      "validated_data",
+      "student_create",
+      "json_data",
+      "stream",
+      "pythondata",
+      "io.BytesIO",
+      "JSONParser",
+      "is_valid",
+      "save",
+      "JSONRenderer"
+    ],
+    "alignment": "Add a raw Django create endpoint demonstrating that explicit pipeline, before the later request.data abstraction. Retain CSRF and meaningful error status codes."
+  },
+  {
+    "lesson": 9,
+    "project": "09_django_crud_fbv_cbv",
+    "title": "CRUD API using Function Based View and Class Based View in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      935,
+      2103,
+      3272,
+      4207
+    ],
+    "observations": "The sampled code uses myapp.py helper functions including get_data and update_data. The server serializes a student queryset with many=True. The class-based section defines StudentAPI(View) and visibly disables CSRF on dispatch.",
+    "keywords": [
+      "get_data",
+      "post_data",
+      "update_data",
+      "StudentAPI",
+      "View",
+      "many=True",
+      "method_decorator",
+      "csrf_exempt"
+    ],
+    "alignment": "Add a client with similarly named helpers and use the explicit JSONParser pipeline. Explain the intentional difference: keep CSRF enabled and put record ids in detail URLs rather than GET bodies."
+  },
+  {
+    "lesson": 10,
+    "project": "10_validation",
+    "title": "Validation in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      381,
+      858,
+      1334,
+      1716
+    ],
+    "observations": "The sampled serializer shows object-level name/city validation using Ranchi, and a reusable start_with_r validator. A response displays a roll-field validation failure.",
+    "keywords": [
+      "validate",
+      "start_with_r",
+      "ValidationError",
+      "non_field_errors",
+      "validators"
+    ],
+    "alignment": "Add separate reusable, field-level and object-level practice rules. Use startswith rather than indexing the first character, and preserve existing values during partial validation."
+  },
+  {
+    "lesson": 11,
+    "project": "11_model_serializer",
+    "title": "Model Serializer in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      463,
+      1042,
+      1621,
+      2084
+    ],
+    "observations": "The first code sample uses ModelSerializer with Meta.model and explicit name/roll/city fields. Later samples add object-level validation, demonstrating that inferred fields do not prevent custom rules.",
+    "keywords": [
+      "ModelSerializer",
+      "Meta",
+      "model",
+      "fields",
+      "validate"
+    ],
+    "alignment": "Keep the explicit ModelSerializer and explain that custom validation can be added without writing default create/update methods."
+  },
+  {
+    "lesson": 12,
+    "project": "12_function_based_api_view",
+    "title": "Function Based API View in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      922,
+      2075,
+      3229,
+      4151
+    ],
+    "observations": "The sampled function-view code validates request.data and returns Response objects, with a later example explicitly returning HTTP_201_CREATED. StudentAdmin shows id/name/roll/city columns. An intermediate update uses partial=True with PUT.",
+    "keywords": [
+      "api_view",
+      "request.data",
+      "Response",
+      "HTTP_201_CREATED",
+      "StudentAdmin",
+      "list_display"
+    ],
+    "alignment": "Add readable admin columns and document the deliberate PUT/PATCH distinction in this companion. Existing function views already demonstrate the main abstractions."
+  },
+  {
+    "lesson": 13,
+    "project": "13_class_based_api_view",
+    "title": "Class Based APIView in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      317,
+      714,
+      1110,
+      1428
+    ],
+    "observations": "StudentAPI inherits APIView, handles an optional pk for retrieval, and uses request.data in post. Later samples show the browsable API's update forms.",
+    "keywords": [
+      "StudentAPI",
+      "APIView",
+      "get",
+      "post",
+      "pk",
+      "format",
+      "Response"
+    ],
+    "alignment": "Keep explicit APIView methods. Explain that the companion separates collection and detail classes instead of branching on optional pk in one class."
+  },
+  {
+    "lesson": 14,
+    "project": "14_generics_and_mixins",
+    "title": "Generic API View and Mixins in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      521,
+      1172,
+      1824,
+      2345
+    ],
+    "observations": "The reviewed code defines individual StudentUpdate and StudentDestroy classes using GenericAPIView plus mixins, with HTTP handlers delegating to update/retrieve actions.",
+    "keywords": [
+      "GenericAPIView",
+      "UpdateModelMixin",
+      "DestroyModelMixin",
+      "queryset",
+      "serializer_class",
+      "retrieve",
+      "update"
+    ],
+    "alignment": "Add individually routed mixin examples alongside the existing combined collection/detail classes so the build-up remains visible."
+  },
+  {
+    "lesson": 15,
+    "project": "15_concrete_views",
+    "title": "Concrete View Class in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      391,
+      881,
+      1370,
+      1762
+    ],
+    "observations": "The lecture shows separate StudentList, StudentCreate and StudentRetrieve classes before combined ListCreateAPIView and RetrieveUpdateDestroyAPIView classes. URL examples switch between the variants.",
+    "keywords": [
+      "ListAPIView",
+      "CreateAPIView",
+      "RetrieveAPIView",
+      "ListCreateAPIView",
+      "RetrieveUpdateDestroyAPIView",
+      "StudentListCreate"
+    ],
+    "alignment": "Add single-operation concrete views with separate practice URLs, preserving the existing combined CRUD endpoint."
+  },
+  {
+    "lesson": 16,
+    "project": "16_viewset",
+    "title": "ViewSet in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      285,
+      642,
+      999,
+      1285
+    ],
+    "observations": "The code defines StudentViewSet with list, retrieve and create actions, registers it with DefaultRouter, and displays viewset metadata such as action and basename in the terminal.",
+    "keywords": [
+      "StudentViewSet",
+      "ViewSet",
+      "DefaultRouter",
+      "register",
+      "basename",
+      "action",
+      "list",
+      "retrieve",
+      "create"
+    ],
+    "alignment": "Keep explicit viewset actions and add notes mapping HTTP methods to router action names. The companion uses get_object_or_404 for missing ids."
+  },
+  {
+    "lesson": 17,
+    "project": "17_model_viewset",
+    "title": "Model View Set and Ready Only Model View Set in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      181,
+      408,
+      634,
+      816
+    ],
+    "observations": "The samples show student admin columns, a writable browsable API form, and a read-only detail response whose allowed methods are GET, HEAD and OPTIONS.",
+    "keywords": [
+      "ModelViewSet",
+      "ReadOnlyModelViewSet",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "list_display"
+    ],
+    "alignment": "Keep both writable and read-only endpoints and explain the visible Allow-header distinction."
+  },
+  {
+    "lesson": 18,
+    "project": "18_basic_authentication",
+    "title": "Basic Authentication and Permission Class in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      521,
+      1173,
+      1825,
+      2347
+    ],
+    "observations": "The samples show BasicAuthentication and IsAuthenticated on StudentModelViewSet, plus global authentication/permission settings as an alternative.",
+    "keywords": [
+      "BasicAuthentication",
+      "IsAuthenticated",
+      "IsAdminUser",
+      "AllowAny",
+      "authentication_classes",
+      "permission_classes"
+    ],
+    "alignment": "The main route already matches this structure. Added practice routes compare public, authenticated, staff and Django-model permission policies."
+  },
+  {
+    "lesson": 19,
+    "project": "19_session_authentication",
+    "title": "Session Authentication and Permission in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      332,
+      748,
+      1164,
+      1496
+    ],
+    "observations": "The code uses SessionAuthentication and shows alternative permission classes, including DjangoModelPermissions; a slide explains authenticated-or-read-only access.",
+    "keywords": [
+      "SessionAuthentication",
+      "IsAuthenticatedOrReadOnly",
+      "DjangoModelPermissions"
+    ],
+    "alignment": "Added runnable permission comparisons. Session writes retain CSRF protection; IsAdminUser checks is_staff."
+  },
+  {
+    "lesson": 20,
+    "project": "20_custom_permissions",
+    "title": "Custom Permission in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      161,
+      363,
+      564,
+      726
+    ],
+    "observations": "The code moves from SessionAuthentication/IsAuthenticated to an imported MyPermission class. The sampled frames do not show that custom class's implementation.",
+    "keywords": [
+      "MyPermission",
+      "custompermissions",
+      "permission_classes",
+      "SessionAuthentication"
+    ],
+    "alignment": "The companion's IsStaffOrReadOnly is an explicitly original policy, not a reconstruction of the unseen MyPermission body."
+  },
+  {
+    "lesson": 21,
+    "project": "21_function_view_authentication",
+    "title": "Authentication and Permission in Function Based View in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      113,
+      255,
+      397,
+      511
+    ],
+    "observations": "The function student_api uses api_view for CRUD and adds authentication_classes([BasicAuthentication]) and permission_classes([IsAuthenticated]) decorators.",
+    "keywords": [
+      "student_api",
+      "api_view",
+      "authentication_classes",
+      "permission_classes",
+      "BasicAuthentication",
+      "IsAuthenticated"
+    ],
+    "alignment": "The existing companion already uses these decorators. Read their order and compare function views with class attributes in lesson 18."
+  },
+  {
+    "lesson": 22,
+    "project": "22_token_authentication",
+    "title": "Token Authentication in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      833,
+      1874,
+      2916,
+      3749
+    ],
+    "observations": "The samples show a token in Django admin, a gettoken route using obtain_auth_token, an HTTPie introduction, and a token-authenticated PUT request.",
+    "keywords": [
+      "TokenAuthentication",
+      "IsAuthenticated",
+      "obtain_auth_token",
+      "gettoken",
+      "HTTPie",
+      "Authorization"
+    ],
+    "alignment": "Added the lecture-named /gettoken/ alias. The original /api/token/ remains. Notes include HTTPie examples with a placeholder instead of a copied credential."
+  },
+  {
+    "lesson": 23,
+    "project": "23_custom_authentication",
+    "title": "Custom Authentication in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      151,
+      340,
+      529,
+      681
+    ],
+    "observations": "CustomAuthentication subclasses BaseAuthentication, reads request.GET['username'] via get, finds a User and returns (user, None); missing or unknown values follow different paths.",
+    "keywords": [
+      "CustomAuthentication",
+      "BaseAuthentication",
+      "authenticate",
+      "AuthenticationFailed",
+      "User"
+    ],
+    "alignment": "Added a from-scratch CustomAuthentication exercise that verifies a secret database token. Username-only identity is not sufficient authentication; the runnable code intentionally differs."
+  },
+  {
+    "lesson": 24,
+    "project": "24_simple_jwt",
+    "title": "JSON Web Token and Simple JWT in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      690,
+      1553,
+      2416,
+      3106
+    ],
+    "observations": "The slides show access/refresh lifetimes. Routes named gettoken, refreshtoken and verifytoken use Simple JWT views; the viewset uses JWTAuthentication and IsAuthenticated.",
+    "keywords": [
+      "JWTAuthentication",
+      "TokenObtainPairView",
+      "TokenRefreshView",
+      "TokenVerifyView",
+      "SIMPLE_JWT"
+    ],
+    "alignment": "Added the three lecture-named aliases, preserving /api/token/ routes. Tokens retain the Bearer header scheme."
+  },
+  {
+    "lesson": 25,
+    "project": "25_throttling",
+    "title": "Throttling in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      488,
+      1099,
+      1710,
+      2199
+    ],
+    "observations": "The sampled responses show HTTP 429 with Retry-After, and the lecture switches from a viewset to individual generic view routes.",
+    "keywords": [
+      "HTTP429",
+      "Retry-After",
+      "throttled",
+      "StudentList",
+      "StudentRetrieve"
+    ],
+    "alignment": "Existing throttles demonstrate the limit. Explain that rates/cache scope are companion choices, since those settings are not visible in these samples."
+  },
+  {
+    "lesson": 26,
+    "project": "26_filtering",
+    "title": "Filtering and django filter in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      383,
+      861,
+      1723
+    ],
+    "observations": "Samples show student responses with a passby field and a ListAPIView with filterset_fields=['city'].",
+    "keywords": [
+      "DjangoFilterBackend",
+      "filterset_fields",
+      "city",
+      "ListAPIView",
+      "passby"
+    ],
+    "alignment": "The companion filters city and roll. Its Student model has no passby field; that is a deliberate smaller schema, not a copied model definition.",
+    "exclude_seconds": [
+      1340
+    ]
+  },
+  {
+    "lesson": 27,
+    "project": "27_search_filter",
+    "title": "Search Filter in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      144,
+      325,
+      506,
+      650
+    ],
+    "observations": "The view uses SearchFilter and search_fields=['city']; the browser requests a search for Bokaro and shows matching students.",
+    "keywords": [
+      "SearchFilter",
+      "search_fields",
+      "search",
+      "city",
+      "Bokaro"
+    ],
+    "alignment": "The companion searches both name and city, an explicit extension. Compare ?search=Ranchi with exact filtering from lesson 26."
+  },
+  {
+    "lesson": 28,
+    "project": "28_ordering_filter",
+    "title": "Ordering Filter in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      93,
+      211,
+      328,
+      422
+    ],
+    "observations": "The OrderingFilter slide lists several ordering_fields choices. The final sampled view restricts ordering to name, and browser samples use descending ordering.",
+    "keywords": [
+      "OrderingFilter",
+      "ordering_fields",
+      "ordering",
+      "name",
+      "roll"
+    ],
+    "alignment": "The companion explicitly permits name, roll and id. A minus sign requests descending order; the extra allowed fields are an extension."
+  },
+  {
+    "lesson": 29,
+    "project": "29_page_number_pagination",
+    "title": "Page Number Pagination in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      396,
+      891,
+      1386,
+      1782
+    ],
+    "observations": "MyPageNumberPagination has page_size=5, then page_query_param='p' and page_size_query_param='records'. A slide covers maximum page size and last-page strings.",
+    "keywords": [
+      "MyPageNumberPagination",
+      "PageNumberPagination",
+      "page_size",
+      "page_query_param",
+      "page_size_query_param",
+      "max_page_size"
+    ],
+    "alignment": "Added a practice endpoint with p/records and page size 5. The cap of 10 is our bounded companion setting; the original route retains page/page_size."
+  },
+  {
+    "lesson": 30,
+    "project": "30_limit_offset_pagination",
+    "title": "Limit Offset Pagination in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      155,
+      349,
+      543,
+      699
+    ],
+    "observations": "MyLimitOffsetPagination is selected by pagination_class. The final sample sets default_limit=5, mylimit/myoffset query names and max_limit=3.",
+    "keywords": [
+      "MyLimitOffsetPagination",
+      "LimitOffsetPagination",
+      "default_limit",
+      "mylimit",
+      "myoffset",
+      "max_limit"
+    ],
+    "alignment": "Added the same query names, with default_limit=3 and max_limit=3 so the default does not exceed the cap. Main route retains limit/offset."
+  },
+  {
+    "lesson": 31,
+    "project": "31_cursor_pagination",
+    "title": "Cursor Pagination in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      120,
+      270,
+      420,
+      540
+    ],
+    "observations": "The slides explain cursor ordering. A sample shows page_size=3 followed by a missing-created-field error; the last frame shows next/previous cursor URLs.",
+    "keywords": [
+      "MyCursorPagination",
+      "CursorPagination",
+      "page_size",
+      "ordering",
+      "created",
+      "cursor"
+    ],
+    "alignment": "Added a size-3 practice variant using stable id ordering. The sampled final ordering assignment is not visible; do not assume it matches ours."
+  },
+  {
+    "lesson": 32,
+    "project": "32_serializer_relations",
+    "title": "Serializer Relations in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      307,
+      692,
+      1077,
+      1385
+    ],
+    "observations": "The code uses Singer/Song, singer/song router prefixes, a reverse song field, StringRelatedField and a read-only SlugRelatedField using duration.",
+    "keywords": [
+      "Singer",
+      "Song",
+      "SingerSerializer",
+      "SongSerializer",
+      "StringRelatedField",
+      "PrimaryKeyRelatedField",
+      "SlugRelatedField",
+      "HyperlinkedRelatedField"
+    ],
+    "alignment": "Added singer/song models, admin columns, CRUD, seed data and four relation representations. The earlier classroom exercise remains available."
+  },
+  {
+    "lesson": 33,
+    "project": "33_hyperlinked_serializer",
+    "title": "Hyperlinked Model Serializer in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      95,
+      214,
+      333,
+      428
+    ],
+    "observations": "StudentSerializer subclasses HyperlinkedModelSerializer. A shell repr shows a url HyperlinkedIdentityField referring to student-detail alongside id/name/roll/city.",
+    "keywords": [
+      "HyperlinkedModelSerializer",
+      "HyperlinkedIdentityField",
+      "StudentSerializer",
+      "student-detail",
+      "repr"
+    ],
+    "alignment": "The existing companion demonstrates the same URL representation. Inspect serializer repr and router basename together."
+  },
+  {
+    "lesson": 34,
+    "project": "34_nested_serializer",
+    "title": "Nested Serializer in Django REST Framework (Hindi)",
+    "reviewed_timestamps": [
+      130,
+      292,
+      455,
+      585
+    ],
+    "observations": "The lecture again uses Singer/Song and singer/song routes. The last response nests song dictionaries under a singer's sungby key.",
+    "keywords": [
+      "Singer",
+      "Song",
+      "SingerSerializer",
+      "SongSerializer",
+      "sungby",
+      "many"
+    ],
+    "alignment": "Added an original singer/song nested-output example. It uses the reverse key song consistently with lesson 32 instead of the visible sungby key; nested writes remain explicit separate requests."
+  },
+  {
+    "lesson": 35,
+    "project": "35_final_api_project",
+    "title": "Django API Project and How to Disable Browsable API in Production (Hindi)",
+    "reviewed_timestamps": [
+      301,
+      679,
+      1056,
+      1358
+    ],
+    "observations": "A diagram connects an existing CRUD website and database to an API. UserSerializer imports enroll.models.User. Later frames show the HTML enrollment form/table and /api/crud/ JSON, including plaintext password values.",
+    "keywords": [
+      "enroll",
+      "User",
+      "UserSerializer",
+      "ModelSerializer",
+      "CRUD",
+      "api/crud",
+      "name",
+      "email",
+      "password"
+    ],
+    "alignment": "Added an existing enroll app with HTML CRUD and a REST endpoint using the same model. Passwords are hashed and write-only, and access is staff-only. The earlier JWT student capstone is an additional exercise, not the lecture's exact app."
+  }
+]

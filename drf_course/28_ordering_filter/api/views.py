@@ -1,0 +1,32 @@
+from rest_framework.filters import OrderingFilter
+
+from rest_framework import generics
+from .models import Student
+from .serializers import StudentSerializer
+
+
+class StudentList(generics.ListCreateAPIView):
+    queryset = Student.objects.all()
+    serializer_class = StudentSerializer
+
+    filter_backends = [OrderingFilter]
+    ordering_fields = ["name", "roll", "city"]
+    ordering = ["id"]
+
+class StudentDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Student.objects.all()
+    serializer_class = StudentSerializer
+
+
+# NOTES ABOUT THE COMPLETE CODE ABOVE
+# ListCreateAPIView already implements GET list and POST create.
+# RetrieveUpdateDestroyAPIView implements GET one, PUT, PATCH and DELETE.
+# queryset says where records come from; serializer_class says how they are validated/output.
+# The detail URL supplies pk, which is the default lookup field.
+# DRF handles 400 validation errors, 404 missing records, and the normal success statuses.
+# Use get_queryset() if results depend on the request user; a class queryset alone is shared policy.
+# Modern version note: concrete generic views are still supported and reduce repeated handlers.
+#
+# OrderingFilter reads ?ordering=-roll; a minus sign means descending order.
+# ?ordering=city,name uses multiple keys. ordering_fields is an explicit allowlist.
+# Default ordering applies when no valid ordering parameter is supplied.
