@@ -1,4 +1,4 @@
-# DRF learning workspace
+# DRF — Django REST Framework learning projects
 
 Your **35 independent Django lesson projects** are in [drf_course](drf_course/README.md).
 
@@ -16,7 +16,7 @@ This was sampled visual review, not full viewing or transcription; the examples 
 Use the course index for setup. The local `.venv` has the tested dependencies installed.
 Every lesson has its own README, lecture notes and explanatory comments beneath the complete code.
 
-Download everything: [35-project ZIP](drf-course-35-projects.zip).
+To download the projects from GitHub, choose **Code → Download ZIP**.
 
 The temporary screenshots, capture tools and generation scripts have been removed.
 The projects retain their source code, migrations, tests, setup instructions and study notes.
